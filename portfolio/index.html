@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<title>My Portfolio</title>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var aboutLink = document.querySelector('a[href="#about"]');
+      aboutLink.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        var aboutSection = document.getElementById('about');
+        aboutSection.scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var aboutLink = document.querySelector('a[href="#"]');
+      aboutLink.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        var aboutSection = document.getElementById('home');
+        aboutSection.scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+    
+    document.addEventListener('DOMContentLoaded', function () {
+      var aboutLink = document.querySelector('a[href="#portfolio"]');
+      aboutLink.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        var aboutSection = document.getElementById('portfolio');
+        aboutSection.scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div id="navbar">
+  <div>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="ReactResume.pdf">Resume</a>
+    <a href="#portfolio">Portfolio</a>
+  </div>
+  <div>
+    <span id="phone-icon">📱</span>
+    <span style="color: white;">+91 7075636589</span>
+  </div>
+</div>
+
+<div id="content">
+  <div class="contentt">
+    <div id="text1">SRIKAR </div>
+    <div id="text2">YELLEPEDDI</div>
+    <div id="text3">Web developer</div>
+    <button id="buttonr" onclick="ReactResume.pdf">Resume</button>
+  </div>
+</div>
+
+<div class="section" id="about">
+  <div class="containerabout">
+    <div class="textsabout">
+      <div id="navbar">
+        <div>
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+        </div>
+        <div>
+          <span id="phone-icon">📱</span>
+          <span style="color: white;">+91 7075636589</span>
+        </div>
+      </div>
+      <div class="section-title">About Me</div>
+      <p style="font-style: oblique;">ysrikarabhi@gmail.com</p>
+      <div class="section-content">
+        <p>Computer Science Engineer with a strong fundamentals in front end technologies and one year experience as an Application Development Associate at Accenture.</p>
+        <p>Experienced full-stack developer with expertise in React, HTML/CSS, and JavaScript. Skilled in creating interactive user interfaces and API integration. Co-founded and mentored Computer Science Club. Published a paper on Mineral Identification using CNN.</p>
+        <p>Experience: Accenture - Application Development Associate<br>
+        Education: Velagapudi Ramakrishna Siddhartha Engineering College. Bachelor of Technology in Computer Science Engineering</p>
+      </div>
+    </div>
+    <img src="picture.jpg" alt="" style="height: 500px;">
+  </div>
+</div>
+<div class="section" id="portfolio">
+  <div id="navbar">
+    <div>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+    </div>
+    <div>
+      <span id="phone-icon">📱</span>
+      <span style="color: white;">+91 7075636589</span>
+    </div>
+  </div>
+  <div class="section-title">Portfolio</div>
+  <div class="section-contentp">
+    <div id="textCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h3>Apsolut Resource Management tool </h3>
+          <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Freelance Web & Mobile Development</p>
+          <p style="text-align: justify;">Spearheaded the development of the Apsolut Resource Management tool, a web and mobile-oriented application,
+            utilizing full-stack development technologies, including HTML, CSS, and React JS, resulting in a robust and scalable
+            product.</p>
+          <a href="https://github.com/Srikar-abhi-ram/Apsolute-web-tool">Github</a>
+        </div>
+        <div class="carousel-item">
+          <h3>Mineral Identification using Convolutional Neural Network</h3>
+          <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">AI/ML</p>
+          <p style="text-align: justify;">Developed a Deep Learning-based Mineral Identification model using
+            Convolutional Neural Network, which was trained on the mineral dataset. The suggested technique detects the
+            minerals and labels them with their relevant class labels using multiple photos from the image collection. Tensor
+            Flow, Keras, and OpenCV are used to detect these minerals.
+          </p>
+          <a href="https://github.com/Srikar-abhi-ram/mineral-Identification-webtool">Github</a>
+        </div>
+        <div class="carousel-item">
+          <h3>BlopCorn</h3>
+          <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">React & Node</p>
+          <p style="text-align: justify;">A React based bloggin website which is used to wite blogs about recent movies.The user should login/signup and read the existing blogs and write new exoiting blogs. This is a full stack project
+            where I used React Framework for frontend development and mysqli as database and Node/Express js for backend.</p>
+          <a href="#">Github</a>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#textCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#textCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <div class="contentexp">
+      <div class="bar"></div>
+      <div class="textcont">
+        <h3>Experience</h3>
+      <p>Accenture</p>
+      <p>packaged application developer(Oct 2022 – Oct 2023)</p>
+      <p>During my tenure at Accecutre, Undergone training on React framework, equipping myself to become a react developer.
+       <ul>
+       <li>worked on creating and managing React components, handling data and state.</li>
+       <li>worked on various React components,used basic Hooks .</li>
+        <li>worked on developing interactive User Interface and API integration.</li>
+        <li>I up-skilled myself to React Redux tool kit , to keep-up with the latest trend in the technology</li>
+      </ul>
+<br><br>
+      <p>Apsolut Resource Management tool</p>
+      <p>Freelance developer(May 2021 – July 2022)</p>
+       <ul>
+       <li>Spearheaded the development of the Apsolut Resource Management tool, a web and mobile-oriented application,
+        utilizing full-stack development technologies, including HTML, CSS, and React JS, resulting in a robust and scalable
+        product.
+        </li>
+       <li>Successfully integrated the tool into a mobile application using Flutter, enhancing its accessibility and user reach,
+        leading to a 50% increase in user engagement.</li>
+        </ul>
+    </div>
+    
+    </div>
+    <div class="skills">
+      <h3>Skills</h3>
+      <ul>
+        <li>
+         <p style="font-style: italic;"> Languages:</p>Java, React,TypeScript, HTML/CSS, JavaScript,PHP,Dart,SQL
+        </li>
+        <li><p style="font-style: italic;">Developer Tools:</p> VS Code, Android Studio,Jupyter notebook</li>
+        <li><p style="font-style: italic;">Frameworks: </p>Flutter,Google Firebase, GitHub</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<br><br><br>
+<footer>
+  &copy; 2023 Sai Balaji Srikar.All rights reserved.
+</footer>
+</body>
+</html>
+
+</body>
+</html>
